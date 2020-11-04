@@ -37,9 +37,13 @@ $container['logger'] = function ($c) {
 };
 
 // -----------------------------------------------------------------------------
-// Action factories
+// Controller factories
 // -----------------------------------------------------------------------------
 
-$container[App\Action\HomeAction::class] = function ($c) {
-    return new App\Action\HomeAction($c->get('view'), $c->get('logger'));
+$container['home'] = function ($c) {
+    return new App\Controller\HomeController($c);
+};
+
+$container['voucher'] = function ($c) {
+    return new App\Controller\VoucherController($c);
 };

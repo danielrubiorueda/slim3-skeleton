@@ -1,18 +1,115 @@
+@font-face {
+    font-family: "caledario";
+    src: url("fonts/font.eot"), url("fonts/font.eot?#iefix") format("embedded-opentype"), url("fonts/font.woff2") format("woff2"), url("fonts/font.woff") format("woff"), url("fonts/font.ttf") format("truetype"), url("fonts/font.svg#caledario") format("svg");
+}
+
 body {
-    margin: 50px 0 0 0;
+    margin: 0;
     padding: 0;
     width: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
+    font-family: "caledario", Helvetica, Arial, sans-serif;
     color: #aaa;
     font-size: 18px;
 }
 
-h1 {
-    color: #719e40;
-    letter-spacing: -3px;
-    font-family: 'Lato', sans-serif;
-    font-size: 100px;
-    font-weight: 200;
-    margin-bottom: 0;
+.width {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#head {
+    color: #0990ff;
+    padding: 2em;
+}
+
+#head .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    line-height: 50px;
+    position: relative;
+}
+
+#logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+#menu .cta {
+    border: solid #0990ff 1px;
+    padding: 9px 18px;
+    border-radius: 10px;
+}
+
+#menu a {
+    margin-right: 20px;
+}
+
+#head a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#hoy {
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    left: 12px;
+}
+
+.jumbo {
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.jumbo .container {
+    display: flex;
+    padding: 2em;
+    color: white;
+    margin: 2em auto;
+}
+
+.jumbo form {
+    font-size: 16px;
+    width: 200px;
+    padding: 1em;
+    border: solid white 1px;
+    border-radius: 16px;
+    margin: 2em;
+}
+
+.jumbo input {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    color: #195b92;
+    outline: 0;
+    width: 100%;
+}
+
+.jumbo button {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #0990ff;
+    cursor: pointer
+}
+
+.jumbo .description {
+    flex: 1;
+}
+
+form .input {
+    color: white;
+    margin-bottom: 15px;
 }

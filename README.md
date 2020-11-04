@@ -29,5 +29,5 @@ This is a simple skeleton project for Slim 3 that includes Twig, Flash messages 
 * `app/dependencies.php`: Services for Pimple
 * `app/middleware.php`: Application middleware
 * `app/routes.php`: All application routes are here
-* `app/src/Action/HomeAction.php`: Action class for the home page
+* `app/src/Controller/HomeController.php`: Controller class for the home page
 * `app/templates/home.twig`: Twig template file for the home page

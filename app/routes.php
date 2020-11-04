@@ -1,5 +1,8 @@
 <?php
 // Routes
 
-$app->get('/', App\Action\HomeAction::class)
-    ->setName('homepage');
+$app->get('/', 'home:getHome');
+    
+$app->get('/voucher/{id}', 'voucher:getVoucher');
+
+    
